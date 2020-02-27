@@ -18,7 +18,8 @@ function countDown()
             echo $rts;
         }
     } catch (Exception $e) {
-        echo ' Error: ',  $e->getMessage();
+
+        echo " Error: ",  $e->getMessage();
     }
 }
 countDown();
