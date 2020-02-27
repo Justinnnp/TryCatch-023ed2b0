@@ -8,8 +8,7 @@
 <body>
     <?php
 
-function countDown() {
-
+function countDown(){
 $rts = rand(0, 20);
     try {
         if ($rts >= 0 && $rts <= 10) {
