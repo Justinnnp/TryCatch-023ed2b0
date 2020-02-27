@@ -8,10 +8,20 @@
 <body>
     <?php
 
-    $rts = rand(0,10);
-    function countDown() {
-        echo ($rts);
+function countDown() {
+
+$rts = rand(0, 20);
+    try {
+        if ($rts >= 0 && $rts <= 10) {
+            throw new Exception('Er is iets fout gegaan !');
+        } else {
+            echo $rts;
+        }
+    } catch (Exception $e) {
+        echo ' Error: ',  $e->getMessage();
     }
-    ?>
+}
+countDown();
+?>
 </body>
 </html>
